@@ -1,0 +1,122 @@
+/* 
+ * less
+ * yumen t=20120604
+ * 顶部进度条 样式
+ */
+.progress-bar .step-item {
+  background-image: url( http://img03.taobaocdn.com/tps/i3/T17n6tXeJcXXaMQcE7-12-250.png );
+  background-repeat: no-repeat;
+}
+.progress-bar {
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.progress-bar ol {
+  background-color: #F5F5F5;
+  *zoom: 1;
+}
+.progress-bar ol:after {
+  content: '\20';
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.progress-bar ol .step-item {
+  float: left;
+  line-height: 33px;
+  color: #999999;
+  background-position: right 0;
+}
+.progress-bar ol .step-item strong {
+  position: absolute;
+  float: left;
+  font-size: 28px;
+  font-weight: normal;
+  font-family: arial;
+  padding-left: 18px;
+  font-style: oblique;
+}
+.progress-bar ol .step-item h2 {
+  width: 172px;
+  height: 33px;
+  margin-right: 12px;
+  border-width: 1px 0;
+  border-color: #DEDEDE;
+  border-style: solid;
+  padding-right: 85px;
+  padding-left: 40px;
+  font-family: 微软雅黑;
+  font-size: 14px;
+}
+.progress-bar ol .step-0 h2 {
+  border-width: 1px 0 1px 1px;
+  padding-right: 29px;
+}
+.progress-bar ol .step-1 h2 {
+  padding-right: 18px;
+}
+.progress-bar ol .step-2 h2 {
+  padding-right: 17px;
+}
+.progress-bar ol .step-3 {
+  background-image: none;
+}
+.progress-bar ol .step-3 h2 {
+  border-width: 1px 1px 1px 0;
+  padding-right: 0px;
+  margin-right: 0;
+}
+.at-step-0 ol .step-0 {
+  background-position: right -80px;
+  color: white;
+}
+.at-step-0 ol .step-0 h2 {
+  border-color: #ea9500;
+  background-image: url(http://img03.taobaocdn.com/tps/i3/T17n6tXeJcXXaMQcE7-12-250.png);
+  background-position: 0 -120px;
+  background-repeat: repeat-x;
+}
+.at-step-1 ol .step-1 {
+  background-position: right -80px;
+  color: white;
+}
+.at-step-1 ol .step-1 h2 {
+  border-color: #ea9500;
+  background-image: url(http://img03.taobaocdn.com/tps/i3/T17n6tXeJcXXaMQcE7-12-250.png);
+  background-position: 0 -120px;
+  background-repeat: repeat-x;
+}
+.at-step-1 ol .step-0 {
+  background-position: right -40px;
+}
+.at-step-2 ol .step-2 {
+  background-position: right -80px;
+  color: white;
+}
+.at-step-2 ol .step-2 h2 {
+  border-color: #ea9500;
+  background-image: url(http://img03.taobaocdn.com/tps/i3/T17n6tXeJcXXaMQcE7-12-250.png);
+  background-position: 0 -120px;
+  background-repeat: repeat-x;
+}
+.at-step-2 ol .step-1 {
+  background-position: right -40px;
+}
+.at-step-3 ol {
+  background-image: none;
+}
+.at-step-3 ol .step-3 {
+  background-position: right -80px;
+  color: white;
+}
+.at-step-3 ol .step-3 h2 {
+  border-color: #ea9500;
+  background-image: url(http://img03.taobaocdn.com/tps/i3/T17n6tXeJcXXaMQcE7-12-250.png);
+  background-position: 0 -120px;
+  background-repeat: repeat-x;
+}
+.at-step-3 ol .step-2 {
+  background-position: right -40px;
+}

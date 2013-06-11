@@ -1,0 +1,133 @@
+/* 
+ * less
+ * yumen t=20120604
+ * 顶部进度条 样式
+ */
+
+//import tools
+@import '../mixin.less';
+@import '../variable.less';
+ 
+@progress-bar-bg: "http://img03.taobaocdn.com/tps/i3/T17n6tXeJcXXaMQcE7-12-250.png";
+
+ //定义一些宽度相关的变量
+ 
+@step-item-h2-padding-left: 40px;
+@step-item-h2-padding-right: 85px;
+@step-item-h2-width: 212px - @step-item-h2-padding-left;
+
+@step-item-0-h2-padding-right: 253px - 212px - 12px; 
+@step-item-1-h2-padding-right: 242px - 212px - 12px;
+@step-item-2-h2-padding-right: 241px - 212px - 12px;
+@step-item-3-h2-padding-right: 212px - 212px;
+
+.progress-bar .step-item{
+    background-image: ~"url( @{progress-bar-bg} )";
+    background-repeat: no-repeat;
+}
+
+
+.progress-bar{
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    ol{
+        background-color: #F5F5F5;
+        .clearfix();
+        .step-item{
+            float:left;
+            line-height: 33px;
+            color: #999999;
+            background-position: right 0;
+            strong{
+                position: absolute;
+                float:left;
+                font-size:28px;
+                font-weight: normal;
+                font-family: arial;
+                padding-left: 18px;
+                font-style: oblique;
+            }
+            h2{
+                width: @step-item-h2-width;
+                height: 33px;
+                margin-right: 12px;
+                border-width: 1px 0;
+                border-color: #DEDEDE;
+                border-style: solid;
+                padding-right: @step-item-h2-padding-right;
+                padding-left:  @step-item-h2-padding-left;
+                font-family: 微软雅黑;
+                font-size:14px;
+            }
+        }
+        .step-0{
+            h2{
+                border-width: 1px 0 1px 1px;
+                padding-right: @step-item-0-h2-padding-right;
+            }
+        }
+        .step-1{
+            h2{
+                padding-right: @step-item-1-h2-padding-right;
+            }
+        }
+        .step-2{
+            h2{
+                padding-right: @step-item-2-h2-padding-right;
+            }
+        }
+        .step-3{
+            background-image: none;
+            h2{
+                border-width: 1px 1px 1px 0;
+                padding-right: @step-item-3-h2-padding-right;
+                margin-right: 0;
+            }
+        }
+    }
+    .four-steps{
+        
+    }
+}
+//mixin 一些样式
+.living-step(){
+    background-position: right -80px;
+    color: white;
+    h2{
+        border-color: #ea9500;
+        background-image: ~"url(@{progress-bar-bg})";
+        background-position: 0 -120px;
+        background-repeat: repeat-x;
+    }
+}
+.at-step-0 ol{
+    .step-0{
+        .living-step();
+    }
+}
+.at-step-1 ol{
+    .step-1{
+        .living-step();
+    }
+    .step-0{
+        background-position: right -40px;
+    }
+}
+.at-step-2 ol{
+    .step-2{
+        .living-step();
+    }
+    .step-1{
+        background-position: right -40px;
+    }
+}
+.at-step-3 ol{
+    .step-3{
+        .living-step();
+    }
+    background-image: none;
+    .step-2{
+        background-position: right -40px;
+    }
+}

@@ -1,0 +1,191 @@
+/**
+  * yumen.gk t=2013-3-21
+  * 树 + suggest 样式
+  */
+
+.tree-search{
+  height: 22px;
+  width: 167px;
+  line-height: 22px;
+  border: 1px solid #abadb3;
+  padding: 0 3px;
+}
+.tree-search:focus{
+  border: 1px solid #abadb3;
+}
+/*  simple tree  style */
+
+/*search-tree-suggest*/
+.fuzzy-match-popup{
+  z-index: 99999;
+}
+.fuzzy-match-popup-fixed{
+  position: fixed;
+}
+.tree-search-suggest{
+  position: absolute;
+  left: 7px;
+  top: 31px;
+  padding: 3px 3px;
+  width: 167px;
+  max-height: 180px;
+  overflow: auto;
+  border: 1px solid #abadb3;
+  background-color: white;
+  z-index: 999;
+}
+.tree-search-suggest li{
+  cursor: pointer;
+  border-top: 1px dotted #d8d9d9;
+  padding: 5px;
+}
+.tree-search-suggest li:first-child{
+  border-top: none;
+}
+.tree-search-suggest li strong{
+  color: green;
+  font-weight: bolder;
+}
+/*search-tree-suggest end*/
+
+/* 一级类目 */
+.suggest-box {
+  position: fixed;
+  top: 0;
+  left: 280px;
+  z-index: 10000;
+}
+.suggest-box .suggest-input {
+  width: 200px;
+  padding: 0 3px;
+  margin-top: 7px;
+  height: 18px;
+}
+.suggest-box .suggest-ul {
+  position: absolute;
+  display: block;
+  top: 30px;
+  left: 0;
+  height: 260px;
+  width: 208px;
+  overflow: auto;
+  background-color: white;
+  border: 1px solid #d8d9d9;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.suggest-box .suggest-ul li {
+  zoom: 1;
+  margin-bottom: 3px;
+}
+.suggest-box .suggest-ul li:before,
+.suggest-box .suggest-ul li:after {
+  display: block;
+  content: "";
+}
+.suggest-box .suggest-ul li:after {
+  clear: both;
+}
+.suggest-box .suggest-ul li:before,
+.suggest-box .suggest-ul li:after {
+  display: block;
+  content: "";
+}
+.suggest-box .suggest-ul li:after {
+  clear: both;
+}
+.suggest-box .suggest-ul li .s-item {
+  float: left;
+  cursor: pointer;
+  width: 140px;
+}
+.suggest-box .suggest-ul li .s-item strong {
+  color: red;
+}
+.suggest-box .suggest-ul li .set-default {
+  display: none;
+  float: right;
+  cursor: pointer;
+  color: orange;
+}
+.suggest-box .suggest-ul li.item-hover {
+  background-color: #eee;
+}
+
+.suggest-box .suggest-ul li:hover .set-default {
+  display: block;
+}
+/*  simple tree  style */
+.s-tree{
+  margin-left: 8px;
+  margin-top: 5px;
+}
+.s-tree b{
+  position: absolute;
+  left: -19px;
+  top: 7px;
+  width: 22px;
+  height: 12px;
+  background-position: -47px 0;
+  background-image: url(http://img03.taobaocdn.com/tps/i3/T1vMMUXkBcXXXvgDIT-336-278.png);
+  background-repeat: no-repeat;
+}
+.s-tree li, .s-tree a{
+  line-height: 18px;
+}
+.s-tree .root-open b{
+  /*
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  -webkit-transform: rotateX(180deg);
+  */
+  background-position: -10px 0;
+}
+.s-tree .root,
+.s-tree .leaf {
+  position: relative;
+  display: block;
+  color: #666;
+  padding: 0 25px 4px 0;
+  margin-bottom: 2px;
+  white-space: nowrap;
+}
+.s-tree .root:hover,
+.s-tree .leaf:hover {
+  text-decoration: none;
+}
+.s-tree a:hover {
+  cursor: pointer;
+}
+.s-tree .leaf {
+  /*padding-left: 20px;*/
+}
+.s-tree .leaf:hover {
+  color: #317408;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.s-tree .select {
+  font-weight: bolder;
+  color: #317408;
+}
+.s-tree .opend {
+  background-position: 0 0;
+}
+.s-tree ul{
+  margin-left: 5px;
+}
+.s-tree .tree-index-0>li{
+  border-top: 1px solid #eee;
+  *display: inline-block;
+}
+.s-tree .tree-index-0>li:first-child{
+  border-top: none;
+}
+.s-tree .tree-search-wrap{
+  margin: 5px 2px;
+}

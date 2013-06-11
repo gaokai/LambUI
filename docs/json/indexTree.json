@@ -1,0 +1,77 @@
+[
+    {
+        "name": "基础样式"
+        ,"id": "0"
+        ,"children": [
+            {
+                "name": "布局"
+                ,"id": "base/layout/layout.html"
+            }
+            ,{
+                "name": "大进度条"
+                ,"id": "base/main-progress-bar/main-progress-bar.html"
+            }
+            ,{
+                "name": "小进度条"
+                ,"id": "base/subjoin-progress-bar/subjoin-progress-bar.html"
+            }
+            ,{
+                "name": "breadcrumb"
+                ,"id": "base/breadcrumb/breadcrumb.html"
+            }
+            ,{
+                "name": "盒子结构"
+                ,"id": "base/box/box.html"
+            }
+            ,{
+                "name": "按钮"
+                ,"id": "base/button/button.html"
+            }
+            ,{
+                "name": "静态表单"
+                ,"id": "base/static-form/static-form.html"
+            }
+            ,{
+                "name": "信息提示"
+                ,"id": "base/reminder/reminder.html"
+            }
+            ,{
+                "name": "订单详情"
+                ,"id": "base/case-detail/case-detail.html"
+            }
+            ,{
+                "name": "工单详情"
+                ,"id": "base/order-detail/order-detail.html"
+            }
+        ]
+    }
+    ,{
+        "name": "业务组件"
+        ,"children": [
+            {
+                "name": "图片上传"
+                ,"id": "weapons/upload/upload.html"
+            }
+            ,{
+                "name": "dialog"
+                ,"id": "weapons/dialog/dialog.html"
+            }
+            ,{
+                "name": "image-dd"
+                ,"id": "weapons/image-dd/image-dd.html"
+            }
+            ,{
+                "name": "tips"
+                ,"id": "weapons/tips/tips.html"
+            }
+            ,{
+                "name": "autohide"
+                ,"id": "weapons/autohide/autohide.html"
+            }
+            ,{
+                "name": "count-down"
+                ,"id": "weapons/count-down/count-down.html"
+            }
+        ]
+    }
+]

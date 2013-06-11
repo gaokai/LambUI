@@ -1,0 +1,88 @@
+#header {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#feb300), to(#ffa400));
+  background: -moz-linear-gradient(19% 75% 90deg, #feb300, #ffa400);
+  background: -ms-linear-gradient(top, #feb300, #ffa400);
+}
+/* Modules:= header {{{ */
+#header {
+  height: 50px;
+  background-color: #317408;
+  border-bottom: 1px solid #b3b3b3;
+  box-shadow: 0 0 5px #C3C3C3;
+  z-index: 20;
+}
+#header .logo {
+  float: left;
+  margin: 10px 0 0 0px;
+}
+#header h1,
+#header h2 {
+  display: inline-block;
+}
+#header h1 a {
+  font: normal 28px/28px 'Droid Sans', Arial;
+  color: #fff;
+  text-decoration: none;
+}
+#header a {
+  color: #fff;
+}
+#header h2 {
+  color: #aaa;
+  font-family: 'Droid Sans', Arial;
+}
+#header h2 span {
+  color: #aaa;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: "华文行楷";
+}
+#header nav {
+  float: left;
+  margin: 0px 0 0 100px;
+}
+#header nav ul {
+  height: 50px;
+  line-height: 50px;
+}
+#header nav ul li {
+  position: relative;
+  float: left;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+#header nav ul li:before,
+#header nav ul li:after {
+  position: absolute;
+  top: 0px;
+  display: block;
+  height: 2px;
+  width: 0;
+  content: ' ';
+  opacity: 1;
+  -moz-transition: width 0.5s ease;
+  box-shadow: 0px 0px 5px #f33;
+}
+#header nav ul li:before {
+  background: -moz-linear-gradient(right, #fb5c5c, #ff3333);
+  right: 50%;
+}
+#header nav ul li:after {
+  background: -moz-linear-gradient(left, #fb5c5c, #ff3333);
+  left: 50%;
+}
+#header nav ul li.current:before,
+#header nav ul li.current:after,
+#header nav ul li:hover:before,
+#header nav ul li:hover:after {
+  width: 50%;
+  height: 2px;
+  opacity: 1;
+  background-color: #f33;
+}
+#header nav ul li.current a,
+#header nav ul li.current a {
+  color: #fff;
+  font-weight: bold;
+}
+/* }}} */
